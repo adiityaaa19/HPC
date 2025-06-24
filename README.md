@@ -16,12 +16,3 @@
 | `check_import_status` | Check TMX import status                   |
 
 ---
-
-## 🎨 Style Tips
-
-You can enhance Markdown visuals using inline CSS:
-
-```html
-<span style="background:#f0f0f0; padding:4px 8px; border-radius:4px; font-family:monospace;">
-`list_memories`
-</span>
