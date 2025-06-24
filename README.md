@@ -1,10 +1,10 @@
-# ✨ Translation Memory Commands
+# Translation Memory Commands
 
 ---
 
-## 🛠️ Core Commands
+## 🛠️ Core Functions
 
-| Command                | Description                               |
+| Function                | Description                               |
 |------------------------|-------------------------------------------|
 | `list_memories`       | List saved translation memories           |
 | `create_memory`       | Create a new translation memory           |
