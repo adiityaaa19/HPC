@@ -2,8 +2,6 @@
 
 ---
 
-## 🛠️ Core Functions
-
 | Function                | Description                               |
 |------------------------|-------------------------------------------|
 | `list_memories`       | List saved translation memories           |
