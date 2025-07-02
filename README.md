@@ -1,4 +1,4 @@
-# Translation Memory Commands
+# Translation Memory Tools
 
 ---
 
