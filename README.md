@@ -47,20 +47,18 @@
 
 
 flowchart LR
-  A[Start – Intro: About our Company/Asss] --> B{Qualified?}
-  B -->|✅ Yes| C[Ask for contact number & code]
-  B -->|✅ Yes| D[Ask for specific time]
-  D --> E[API hook ➜ Salesforce CRM]
-  C --> E
-  B -->|❌ No| F[Book appointment calendar]
-  F --> E
-  
-  E --> G[Data‑batch RPA]
-  E --> H[Digital brochures]
-  E --> I[Sales force]
-  E --> J[MSP Support]
-
-  subgraph Global Note
-    K[Call Transfer]
+  Start["Hi — is this {{name}}?"]
+  Start --> Decision{Permission granted?}
+  Decision -->|Yes| Intro[Introduction: our company & services]
+  Decision -->|No| Reschedule["Reschedule / gatekeeper step"]
+  Reschedule --> AskContact["Ask for contact number & code"]
+  Intro --> Interest{Looks interested?}
+  Interest -->|Yes| AskTime["Ask for specific time"]
+  Interest -->|No| Book["Book appointment calendar"]
+  AskContact --> APIhook[API hook → Salesforce CRM]
+  AskTime --> APIhook
+  Book --> APIhook
+  APIhook --> CRM["Salesforce CRM"]
+  subgraph Global
+    Transfer["Call transfer"]
   end
-
