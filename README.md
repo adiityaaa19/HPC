@@ -46,19 +46,4 @@
 
 
 
-flowchart LR
-  Start["Hi — is this {{name}}?"]
-  Start --> Decision{Permission granted?}
-  Decision -->|Yes| Intro[Introduction: our company & services]
-  Decision -->|No| Reschedule["Reschedule / gatekeeper step"]
-  Reschedule --> AskContact["Ask for contact number & code"]
-  Intro --> Interest{Looks interested?}
-  Interest -->|Yes| AskTime["Ask for specific time"]
-  Interest -->|No| Book["Book appointment calendar"]
-  AskContact --> APIhook[API hook → Salesforce CRM]
-  AskTime --> APIhook
-  Book --> APIhook
-  APIhook --> CRM["Salesforce CRM"]
-  subgraph Global
-    Transfer["Call transfer"]
-  end
+# Firecrawl Tool Reference  ---  ## Core Functions  | Tool                           | Description                                                       | |--------------------------------|-------------------------------------------------------------------| | `firecrawl_scrape`             | Single page content → returns markdown/html                      | | `firecrawl_batch_scrape`       | Multiple known URLs → returns markdown/html[]                    | | `firecrawl_map`                | Discovering URLs on a site → returns URL[]                       | | `firecrawl_crawl`              | Multi-page extraction (with limits) → returns markdown/html[]    | | `firecrawl_search`             | Web search for info → returns results[]                          | | `firecrawl_extract`            | Structured data from pages → returns JSON                        | | `firecrawl_deep_research`      | In-depth, multi-source research → returns summary, sources       | | `firecrawl_generate_llmstxt`   | Generate LLMs.txt for a domain → returns text                    | | `firecrawl_check_batch_status` | Check the status of a batch operation → returns text             | | `firecrawl_check_crawl_status` | Check the status of a crawl job → status of the crawl job        | ---
