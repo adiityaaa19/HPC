@@ -45,23 +45,18 @@
 
 
 
+# Browserbase Tools 
 
-# Firecrawl Tools
 
----
-
-| Function                  | Description                                         |
-|--------------------------|-----------------------------------------------------|
-| `firecrawl_scrape`       | Single page content → returns markdown/html         |
-| `firecrawl_batch_scrape` | Multiple known URLs → returns markdown/html[]       |
-| `firecrawl_map`          | Discovering URLs on a site → returns URL[]          |
-| `firecrawl_crawl`        | Multi-page extraction (with limits) → returns markdown/html[] |
-| `firecrawl_search`       | Web search for info → returns results[]             |
-| `firecrawl_extract`      | Structured data from pages → returns JSON           |
-| `firecrawl_deep_research`| In-depth, multi-source research → returns summary, sources |
-| `firecrawl_generate_llmstxt` | Generate LLMs.txt for a domain → returns text      |
-| `firecrawl_check_batch_status` | Check the status of a batch operation → returns text |
-| `firecrawl_check_crawl_status` | Check the status of a crawl job → status of the crawl job |
 
 ---
 
+| Feature              | Description                                     |
+|----------------------|-------------------------------------------------|
+| Browser Automation   | Control and orchestrate cloud browsers          |
+| Data Extraction      | Extract structured data from any webpage        |
+| Console Monitoring   | Track and analyze browser console logs          |
+| Screenshots          | Capture full-page and element screenshots       |
+| Web Interaction      | Navigate, click, and fill forms with ease       |
+
+---
